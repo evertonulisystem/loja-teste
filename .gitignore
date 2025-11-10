@@ -1,0 +1,34 @@
+# XAMPP/Logs
+*.log
+/xampp/
+/logs/
+
+# PHP Cache/Uploads
+/cache/
+/tmp/
+/uploads/
+*.tmp
+
+# Banco (exporta manual como .sql)
+*.sql
+*.db
+/db_backup/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Config sensíveis (senhas)
+config.php
+.env
+
+# Node/Bower (se usar JS)
+node_modules/
+bower_components/
+EOF
