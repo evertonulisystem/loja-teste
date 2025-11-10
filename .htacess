@@ -1,0 +1,12 @@
+# C:\xampp\htdocs\loja-teste\.htaccess
+RewriteEngine On
+RewriteBase /loja-teste/
+
+# Remove .php das URLs (opcional)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Roteamento amigável (se usar MVC depois)
+# RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
